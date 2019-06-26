@@ -13,10 +13,19 @@ Output
 ## head.js
  Returns the head of an array. Returns 'undefined' for empty array.
  
- ```javascript.js
+ ```javascript
 head([1, 2, 3]);
 // => 1
  
 head([]);
 // => undefined
+ ```
+
+ ## tail.js
+Returns the tail of an array. ie, everything after the first element.
+
+ ```javascript
+tail([1, 2, 3]);
+// => [2, 3]
+ 
  ```
