@@ -29,3 +29,11 @@ tail([1, 2, 3]);
 // => [2, 3]
  
  ```
+ ## min.js
+ Returns the minimum of an array.
+ 
+ ```javascript
+  let testArray = [5, 7, -8, 2, 4, 0, 8, -1, 54, 13];
+  min(testArray);
+  // => -8
+ ```
