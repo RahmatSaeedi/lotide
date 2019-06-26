@@ -1,5 +1,5 @@
 // Returns the tail of an array. ie, everything after the first element.
-// jshint esversion:6
+// jshint esversion : 6
 const assertEqual = function(actual, expected) {
   if (actual === expected) {
     console.log(`✅✅✅ Assertion Passed: ${actual} === ${expected}`);

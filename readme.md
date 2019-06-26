@@ -31,9 +31,20 @@ tail([1, 2, 3]);
  ```
  ## min.js
  Returns the minimum of an array.
- 
+
  ```javascript
   let testArray = [5, 7, -8, 2, 4, 0, 8, -1, 54, 13];
   min(testArray);
   // => -8
  ```
+
+ ## stringReverser.js
+Reverses the order of characters in a string. String are pssed via `bash` argv arguments.
+ ```bash
+node reverse.js hello goodbye
+```
+Returns:
+```javascript
+olleh
+eybdoog
+```
