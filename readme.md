@@ -70,3 +70,15 @@ middle([1, 2, 3, 4, 5]) // => [3]
 middle([1, 2, 3, 4]) // => [2, 3]
 middle([1, 2, 3, 4, 5, 6]) // => [3, 4]
 ```
+
+## [assertMiddle.js](assertMiddle.js)
+Asserts the functionality of middle.js
+```bash
+> node assertMiddle
+✅  Assertion Passed:  ===
+✅  Assertion Passed:  ===
+✅  Assertion Passed: 2 === 2
+✅  Assertion Passed: 3 === 3
+✅  Assertion Passed: 2,3 === 2,3
+✅  Assertion Passed: 3,4 === 3,4
+```
