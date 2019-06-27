@@ -48,3 +48,16 @@ Returns:
 olleh
 eybdoog
 ```
+
+## pig-latin.js
+Converts each input argument srings to pig latin (using simplified rules), then puts the translated words together into one sentence, and logges it to the console.
+
+```bash
+node pig-latin Hi my name is John
+  # output: ihay mymyay amenay isyay ohnjay
+```
+
+```bash
+node pig-latin this is all just gibberish
+  # output: isthay isyay allyay ustjay ibberishgay
+```
