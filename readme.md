@@ -102,3 +102,24 @@ Asserts the functionality of witout.js
 ✅  Assertion Passed: 2,3 === 2,3
 ✅  Assertion Passed: 1,2 === 1,2
 ```
+
+## [flatten.js](flatten.js)
+Given an array with other arrays inside, this function can flatten it into a single-level array.
+
+```javascript
+flatten([1, 2, [3, 4], 5, [6]]) // => [1, 2, 3, 4, 5, 6]
+
+flatten([1, 2, [3, [[[[4]] , 5]]], 6, [7, 8, 9, 10]])
+// => [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+
+flatten(["1", ["2", ["3"]]]) // => [ '1', '2', '3' ]
+```
+
+## [assertFlatten.js](assertFlatten.js)
+Asserts the functionality of witout.js
+
+Output
+```bash
+✅  Assertion Passed: 1,2,3,4,5,6,7,8,9,10 === 1,2,3,4,5,6,7,8,9,10
+✅  Assertion Passed: 1,2,3 === 1,2,3
+```

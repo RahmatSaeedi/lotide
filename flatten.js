@@ -1,4 +1,4 @@
-// Given an array with other arrays inside, it can flatten it into a single-level array.
+// Given an array with other arrays inside, this function can flatten it into a single-level array.
 // jshint esversion : 6
 
 
