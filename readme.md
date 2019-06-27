@@ -73,6 +73,7 @@ middle([1, 2, 3, 4, 5, 6]) // => [3, 4]
 
 ## [assertMiddle.js](assertMiddle.js)
 Asserts the functionality of middle.js
+
 ```bash
 > node assertMiddle
 ✅  Assertion Passed:  ===
@@ -82,3 +83,14 @@ Asserts the functionality of middle.js
 ✅  Assertion Passed: 2,3 === 2,3
 ✅  Assertion Passed: 3,4 === 3,4
 ```
+
+## [without.js](without.js)
+Will return a subset of a given array, removing unwanted elements. 
+This does not function correctly when using nested arrays or arrays of objects.
+
+```javascript
+without([1, 2, 3], [1]) // => [2, 3]
+without([1, 2, 1, 3, 1], [1]) // => [2, 3]
+without(["1", "2", "3"], [1, 2, "3"]) // => ["1", "2"]
+```
+
