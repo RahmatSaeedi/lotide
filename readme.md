@@ -48,3 +48,7 @@ eqArrays([1, 2, 3], [3, 2, 1]) // => false
 eqArrays(["1", "2", "3"], ["1", "2", "3"]) // => true
 eqArrays(["1", "2", "3"], ["1", "2", 3]) // => false
 ```
+
+## [assertArraysEqual.js](assertArraysEqual.js)
+ Take in two arrays, asserts that the two are identical, and `console.log` an appropriate message to the console. 
+ 
