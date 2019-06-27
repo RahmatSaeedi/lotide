@@ -51,4 +51,22 @@ eqArrays(["1", "2", "3"], ["1", "2", 3]) // => false
 
 ## [assertArraysEqual.js](assertArraysEqual.js)
  Take in two arrays, asserts that the two are identical, and `console.log` an appropriate message to the console. 
- 
+
+
+## [middle.js](middle.js)
+Takes in an array and return the middle-most element(s) of the given array.
+* For arrays with one or two elements, returns an empty array.
+* For arrays with odd number of elements, an array containing a single middle element is returned.
+* For arrays with an even number of elements, an array containing the two elements in the middle is returned.
+
+```javascript
+middle([1]) // => []
+middle([1, 2]) // => []
+
+middle([1, 2, 3]) // => [2]
+middle([1, 2, 3, 4, 5]) // => [3]
+
+
+middle([1, 2, 3, 4]) // => [2, 3]
+middle([1, 2, 3, 4, 5, 6]) // => [3, 4]
+```
