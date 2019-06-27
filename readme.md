@@ -37,27 +37,3 @@ tail([1, 2, 3]);
   min(testArray);
   // => -8
  ```
-
- ## stringReverser.js
-Reverses the order of characters in a string. String are pssed via `bash` argv arguments.
- ```bash
-node reverse.js hello goodbye
-```
-Returns:
-```javascript
-olleh
-eybdoog
-```
-
-## pig-latin.js
-Converts each input argument srings to pig latin (using simplified rules), then puts the translated words together into one sentence, and logges it to the console.
-
-```bash
-node pig-latin Hi my name is John
-  # output: ihay mymyay amenay isyay ohnjay
-```
-
-```bash
-node pig-latin this is all just gibberish
-  # output: isthay isyay allyay ustjay ibberishgay
-```
