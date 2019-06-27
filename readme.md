@@ -93,4 +93,12 @@ without([1, 2, 3], [1]) // => [2, 3]
 without([1, 2, 1, 3, 1], [1]) // => [2, 3]
 without(["1", "2", "3"], [1, 2, "3"]) // => ["1", "2"]
 ```
+## [assertWithout.js](assertWithout.js)
+Asserts the functionality of witout.js
 
+```bash
+> node assertWithout
+✅  Assertion Passed: 2,3 === 2,3
+✅  Assertion Passed: 2,3 === 2,3
+✅  Assertion Passed: 1,2 === 1,2
+```

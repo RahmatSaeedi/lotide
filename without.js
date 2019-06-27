@@ -11,8 +11,3 @@ const without = function(sourceArray, itemsToRemoveArray) {
   }
   return newArray;
 };
-
-
-console.log(without([1, 2, 3], [1])); // => [2, 3]
-console.log(without([1, 2, 1, 3, 1], [1])); // =>  [2, 3]
-console.log(without(["1", "2", "3"], [1, 2, "3"])); // => ["1", "2"]
