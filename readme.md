@@ -158,3 +158,20 @@ Asserts the functionality of countOnly.js
 ✅  Assertion Passed: undefined === undefined
 ✅  Assertion Passed: 2 === 2
 ```
+
+## [countLetters.js](countLetters.js)
+Returns an object containing count of every letter in an input string
+
+
+## [assertCountLetters.js](assertCountLetters.js)
+Asserts the functionality of countLetters.js
+
+```bash
+> node assertCountLetters
+✅  Assertion Passed: 2 === 2
+✅  Assertion Passed: 6 === 6
+✅  Assertion Passed: 4 === 4
+✅  Assertion Passed: 1 === 1
+✅  Assertion Passed: 7 === 7
+✅  Assertion Passed: 2 === 2
+```
