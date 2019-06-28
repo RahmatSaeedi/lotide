@@ -14,5 +14,3 @@ const flatten = function(sourceArray) {
   }
   return newArray;
 };
-
-console.log(flatten(["1", ["2", ["3"]]]));
