@@ -148,3 +148,13 @@ console.log(result1);
 // Returns: { Jason: 1, Fang: 2 }
 ```
 
+
+## [assertCountOnly.js](assertCountOnly.js)
+Asserts the functionality of countOnly.js
+
+```bash
+> node assertCountOnly
+✅  Assertion Passed: 1 === 1
+✅  Assertion Passed: undefined === undefined
+✅  Assertion Passed: 2 === 2
+```
