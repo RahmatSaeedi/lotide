@@ -123,3 +123,28 @@ Output
 ✅  Assertion Passed: 1,2,3,4,5,6,7,8,9,10 === 1,2,3,4,5,6,7,8,9,10
 ✅  Assertion Passed: 1,2,3 === 1,2,3
 ```
+
+## [countOnly.js](countOnly.js)
+Takes in a collection of items and return an object containing counts of everything that the input object listed.
+
+![Lotide countOnly](images/countOnly.png)
+
+```js
+// Given
+const firstNames = [
+  "Karl",
+  "Salima",
+  "Agouhanna",
+  "Fang",
+  "Kavith",
+  "Jason",
+  "Salima",
+  "Fang",
+  "Joe"
+];
+
+const result1 = countOnly(firstNames, { "Jason": true, "Karima": true, "Fang": true });
+console.log(result1);
+// Returns: { Jason: 1, Fang: 2 }
+```
+
