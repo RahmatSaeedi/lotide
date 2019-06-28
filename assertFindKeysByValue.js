@@ -1,5 +1,5 @@
 // Asserts the functionality of findKeyByValue.js
-// findKeyByValues.js: Searches for keys in an object where its value matches a given value. Returns an array.
+// findKeysByValue.js: Searches for keys in an object where its value matches a given value. Returns an array.
 // jshint esversion : 6
 
 const assertArraysEqual = function(array1, array2) {
