@@ -205,3 +205,47 @@ Asserts the functionality of letterPositions.js
 ✅  Assertion Passed: 4 === 4
 ✅  Assertion Passed: 5 === 5
 ```
+
+## [findKeyByValue.js](findKeyByValue.js)
+Searches for a key in an object where its value matches a given value.
+
+```js
+const bestTVShowsByGenre = {
+  sciFi: "The Expanse",
+  comedy: "Brooklyn Nine-Nine",
+  drama:  "The Wire",
+  drama2:  "The Wire"
+};
+
+findKeyByValue(bestTVShowsByGenre, "The Wire");
+// Returns:  'drama'
+
+findKeyByValue(bestTVShowsByGenre, "That '70s Show");
+// Returns:  undefined
+```
+
+## [assertFindKeyByValue.js](assertFindKeyByValue.js)
+Asserts the functionality of findKeyByValue.js
+
+
+## [findKeysByValue.js](findKeyByValue.js)
+Searches for keys in an object where its value matches a given value. Returns an array.
+
+
+```js
+const bestTVShowsByGenre = {
+  sciFi: "The Expanse",
+  comedy: "Brooklyn Nine-Nine",
+  drama:  "The Wire",
+  drama2:  "The Wire"
+};
+
+findKeyByValue(bestTVShowsByGenre, "The Wire");
+// Returns:  [ 'drama', 'drama2' ]
+
+findKeyByValue(bestTVShowsByGenre, "That '70s Show");
+// Returns:  []
+```
+
+## [assertFindKeysByValue.js](assertFindKeyByValue.js)
+Asserts the functionality of findKeyByValues.js
