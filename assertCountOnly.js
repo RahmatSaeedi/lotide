@@ -1,5 +1,5 @@
 // Asserts the functionality of countOnly.js
-// flatten.js: returns an object containing counts of everything that the input object listed
+// countOnly.js: returns an object containing counts of everything that the input object listed
 // jshint esversion : 6
 
 const assertEqual = function(value1, value2) {
