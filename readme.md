@@ -175,3 +175,33 @@ Asserts the functionality of countLetters.js
 ✅  Assertion Passed: 7 === 7
 ✅  Assertion Passed: 2 === 2
 ```
+
+
+## [letterPositions.js](letterPositions.js)
+Returns an object, containing all the indices in the string where each character is found. Indicies are zero-based.
+
+```js
+letterPositions("hello hehehe");
+/* Returns
+{
+  h: [ 0, 6, 8, 10 ],
+  e: [ 1, 7, 9, 11 ],
+  l: [ 2, 3 ],
+  o: [ 4 ],
+  ' ': [ 5 ]
+}
+*/
+```
+
+## [assertLetterPositions.js](assertLetterPositions.js)
+Asserts the functionality of letterPositions.js
+
+
+```bash
+> node assertLetterPositions
+✅  Assertion Passed: 0,6,8,10 === 0,6,8,10
+✅  Assertion Passed: 1,7,9,11 === 1,7,9,11
+✅  Assertion Passed: 2,3 === 2,3
+✅  Assertion Passed: 4 === 4
+✅  Assertion Passed: 5 === 5
+```
