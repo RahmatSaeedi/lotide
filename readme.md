@@ -7,8 +7,8 @@ It's a simplified & minified version of [Lodash](https://github.com/lodash/lodas
 
 Output
  ```bash
-  🛑🛑🛑 Assertion Failed: "Lighthouse Labs" !== "Bootcamp"
-  ✅✅✅ Assertion Passed: 1 === 1
+  🛑  Assertion Failed: "Lighthouse Labs" !== "Bootcamp"
+  ✅  Assertion Passed: 1 === 1
  ```
 ## [head.js](head.js)
  Returns the head of an array. Returns 'undefined' for empty array.
@@ -86,7 +86,6 @@ Asserts the functionality of middle.js
 
 ## [without.js](without.js)
 Will return a subset of a given array, removing unwanted elements. 
-This does not function correctly when using nested arrays or arrays of objects.
 
 ```javascript
 without([1, 2, 3], [1]) // => [2, 3]
@@ -275,3 +274,17 @@ Should return:
 ✅  Assertion Passed: false === false
 ```
 
+## [map.js](map.js)
+Returns a new array based on the results of callback function.
+
+Requieres:
+  * An array to map
+  * A callback function
+```js
+const words = ["ground", "control", "to", "major", "tom"];
+let firstLetters = map(words, word => word[0]);
+// Returns: ['g','c','t','m','t']
+
+assertArraysEqual(firstLetters, ['g','c','t','m','t']);
+// Returns: ✅  Assertion Passed: g,c,t,m,t === g,c,t,m,t
+```
