@@ -277,7 +277,7 @@ Should return:
 ## [map.js](map.js)
 Returns a new array based on the results of callback function.
 
-Requieres:
+Requires:
   * An array to map
   * A callback function
 ```js
@@ -287,4 +287,39 @@ let firstLetters = map(words, word => word[0]);
 
 assertArraysEqual(firstLetters, ['g','c','t','m','t']);
 // Returns: ✅  Assertion Passed: g,c,t,m,t === g,c,t,m,t
+```
+
+
+## [takeUntil.js](takeUntil.js)
+Creates a slice of array with elements taken from the beginning. Elements are taken until predicate returns falsey. The predicate is invoked with three arguments: (value, index, array).
+```js
+const data1 = [1, 2, 5, 7, 2, -1, 2, 4, 5];
+const data2 = ["I've", "been", "to", "Hollywood", ",", "I've", "been", "to", "Redwood"];
+
+const results1 = takeUntil(data1, x => x < 0);
+const results2 = takeUntil(data2, x => x === ',');
+// results1 = [1, 2, 5, 7, 2]
+// results2 = ["I've", "been", "to", "Hollywood"]
+
+
+assertArraysEqual(results1, [ 1, 2, 5, 7, 2 ]);
+assertArraysEqual(results2, [ "I've", 'been', 'to', 'Hollywood' ]);
+// Returns:
+// ✅  Assertion Passed: 1,2,5,7,2 === 1,2,5,7,2
+// ✅  Assertion Passed: I've,been,to,Hollywood === I've,been,to,Hollywood
+
+```
+
+## [findKey.js](findKey.js)
+This method returns the key of the first element predicate returns truthy. Predicate takes (object[key], key, object).
+
+```js
+findKey({
+  "Blue Hill": { stars: 1 },
+  "Akaleri":   { stars: 3 },
+  "noma":      { stars: 2 },
+  "elBulli":   { stars: 3 },
+  "Ora":       { stars: 2 },
+  "Akelarre":  { stars: 3 }
+}, x => x.stars === 2); // => "noma"
 ```
