@@ -39,7 +39,7 @@ tail([1, 2, 3]);
  ```
 
 ## [eqArrays.js](eqArrays.js)
-Takes in two arrays and returns true or false, based on a perfect match. This does not work with nested arrays.
+Takes in two arrays and returns true or false, based on a perfect match. It also works with nested arrays.
 
 ```javascript
 eqArrays([1, 2, 3], [1, 2, 3]) // => true
@@ -249,3 +249,29 @@ findKeyByValue(bestTVShowsByGenre, "That '70s Show");
 
 ## [assertFindKeysByValue.js](assertFindKeyByValue.js)
 Asserts the functionality of findKeyByValues.js
+
+## [eqObjects.js](eqObjects.js)
+Take in two objects, checks whether that the two are identical, and returns a boolean.
+Supports nested objects with premitive values, and nested arrays.
+
+```js
+eqObjects({ x: 1, y: 2, z: 'w' }, { x: 1, y: 2, z: 'w' }); // => true
+eqObjects({ y: 2, x: 1, z: 'w' }, { x: 1, y: 2, z: 'w' }); // => true
+eqObjects({ x: 1, y:{y: [[2, [2]]], z: {m:'w'}}}, { x: 1, y:{y: [[2, [2]]], z: {m:'w'}} }); // => true
+eqObjects({ x: 1, y: 2, z: 'w' }, { x: 1, y: 2, z: 'w', zz:'zz' }); // => false
+```
+
+## [assertEqObjects.js](assertEqObjects.js)
+Asserts functionality of eqObjects.js
+
+Should return:
+```bash
+✅  Assertion Passed: true === true
+✅  Assertion Passed: true === true
+✅  Assertion Passed: true === true
+✅  Assertion Passed: false === false
+✅  Assertion Passed: true === true
+✅  Assertion Passed: true === true
+✅  Assertion Passed: false === false
+```
+
