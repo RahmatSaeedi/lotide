@@ -16,7 +16,7 @@ const middle = function(array) {
 };
 
 
-middle.assertFunctionality = function () {
+middle.assertFunctionality = function() {
   // Case 1 or 2 elements
   assertArraysEqual(middle([1]), []);
   assertArraysEqual(middle([1, 2]), []);

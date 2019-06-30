@@ -8,7 +8,7 @@ const assertEqual = function(actual, expected) {
   }
 };
 
-assertEqual.assertFunctionality = function () {
+assertEqual.assertFunctionality = function() {
   assertEqual("Lighthouse Labs", "Bootcamp");
   assertEqual(1, 1);
 };

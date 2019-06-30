@@ -8,7 +8,7 @@ const head = function(array) {
 };
 
 
-head.assertFunctionality = function () {
+head.assertFunctionality = function() {
   assertEqual(head([5,6,7]), 5);
   assertEqual(head(["Hello", "Lighthouse", "Labs"]), "Hello");
   assertEqual(head([]) , undefined);

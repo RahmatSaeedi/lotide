@@ -22,7 +22,7 @@ const countOnly = function(array, itemsToCount) {
   return out;
 };
 
-countOnly.assertFunctionality = function () {
+countOnly.assertFunctionality = function() {
   // Should pass all cases
   const firstNames = [
     "Karl",

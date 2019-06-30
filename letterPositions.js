@@ -16,7 +16,7 @@ const letterPositions = function(str) {
   return out;
 };
 
-letterPositions.assertFunctionality = function () {
+letterPositions.assertFunctionality = function() {
   const result1 = letterPositions("hello hehehe");
   assertArraysEqual(result1.h, [ 0, 6, 8, 10 ]);
   assertArraysEqual(result1.e, [ 1, 7, 9, 11 ]);

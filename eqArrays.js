@@ -28,7 +28,7 @@ eqArrays.assertArraysEqual = function(array1, array2) {
   }
 };
 
-eqArrays.assertFunctionality = function () {
+eqArrays.assertFunctionality = function() {
   this.assertArraysEqual([1, [2, 3]], [1, [2, 3]]);
   this.assertArraysEqual(["1", ["2"], "3"], ["1", ["2"], "3"]);
 };

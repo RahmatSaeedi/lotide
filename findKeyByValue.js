@@ -11,7 +11,7 @@ const findKeyByValue = function(object, value) {
   }
 };
 
-findKeyByValue.assertFunctionality = function () {
+findKeyByValue.assertFunctionality = function() {
   const bestTVShowsByGenre = {
     sciFi: "The Expanse",
     comedy: "Brooklyn Nine-Nine",

@@ -24,7 +24,7 @@ const eqObjects = function(object1, object2) {
 };
 
 
-eqObjects.assertFunctionality = function () {
+eqObjects.assertFunctionality = function() {
   assertEqual(eqObjects({ x: 1, y: 2, z: 'w' }, { x: 1, y: 2, z: 'w' }), true);
   assertEqual(eqObjects({ y: 2, x: 1, z: 'w' }, { x: 1, y: 2, z: 'w' }), true);
   assertEqual(eqObjects({ x: 1, y:{y: 2, z: {m:'w'}}}, { x: 1, y:{y: 2, z: {m:'w'}} }), true);

@@ -17,7 +17,7 @@ const countLetters = function(str) {
 };
 
 
-countLetters.assertFunctionality = function () {
+countLetters.assertFunctionality = function() {
   // Should pass all cases
   const result1 = countLetters("Hi there.... Hehehehe...");
   assertEqual(result1.H, 2);
