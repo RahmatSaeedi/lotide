@@ -17,6 +17,8 @@ const without = function(sourceArray, itemsToRemoveArray) {
 
 
 without.assertFunctionality = function() {
+  console.log("Testing " + this.name);
+  
   assertArraysEqual(without([1, 2, 3], [1]), [2, 3]);
   assertArraysEqual(without([1, 2, 1, 3, 1], [1]), [2, 3]);
   assertArraysEqual(without(["1", "2", "3"], [1, 2, "3"]), ["1", "2"]);

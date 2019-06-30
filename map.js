@@ -13,6 +13,7 @@ const map = function(array, callback) {
 
 map.assertFunctionality = function() {
   const words = ["ground", "control", "to", "major", "tom"];
+  console.log("Testing " + this.name);
   assertArraysEqual(map(words, word => word[0]), ['g','c','t','m','t']);
 };
 

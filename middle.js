@@ -18,6 +18,7 @@ const middle = function(array) {
 
 middle.assertFunctionality = function() {
   // Case 1 or 2 elements
+  console.log("Testing " + this.name);
   assertArraysEqual(middle([1]), []);
   assertArraysEqual(middle([1, 2]), []);
   // Case odd number of elements

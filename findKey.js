@@ -21,6 +21,7 @@ findKey.assertFunctionality = function() {
     "Akelarre":  { stars: 3 }
   }, x => x.stars === 2);
 
+  console.log("Testing " + this.name);
   assertEqual(ans, 'noma');
 };
 

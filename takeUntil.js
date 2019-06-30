@@ -22,6 +22,8 @@ const takeUntil = function(array, predicate) {
 
 
 takeUntil.assertFunctionality = function() {
+  console.log("Testing " + this.name);
+  
   const data1 = [1, 2, 5, 7, 2, -1, 2, 4, 5];
   const data2 = ["I've", "been", "to", "Hollywood", ",", "I've", "been", "to", "Redwood"];
 

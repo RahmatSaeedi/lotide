@@ -10,6 +10,7 @@ const tail = function(array) {
 tail.assertFunctionality = function() {
   let x = [1, 2, 3, 4];
   let i = 2;
+  console.log("Testing " + this.name);
   tail(x).forEach(a => {
     assertEqual(a, i++);
   });

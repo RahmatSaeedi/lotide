@@ -22,6 +22,7 @@ findKeysByValue.assertFunctionality = function() {
     drama2:  "The Wire"
   };
   
+  console.log("Testing " + this.name);
   assertArraysEqual(findKeysByValue(bestTVShowsByGenre, "The Wire"),[ 'drama', 'drama2' ]);
   assertArraysEqual(findKeysByValue(bestTVShowsByGenre, "That '70s Show"),[]);
 };

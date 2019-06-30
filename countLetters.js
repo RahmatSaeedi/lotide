@@ -19,6 +19,7 @@ const countLetters = function(str) {
 
 countLetters.assertFunctionality = function() {
   // Should pass all cases
+  console.log("Testing " + this.name);
   const result1 = countLetters("Hi there.... Hehehehe...");
   assertEqual(result1.H, 2);
   assertEqual(result1.e, 6);

@@ -7,7 +7,7 @@ It's a simplified & minified version of [Lodash](https://github.com/lodash/lodas
 
 Output of `assertEqual.assertFunctionality()`
  ```bash
-  🛑  Assertion Failed: "Lighthouse Labs" !== "Bootcamp"
+  ✅  Assertion Passed: Bootcamp === Bootcam
   ✅  Assertion Passed: 1 === 1
  ```
 ## [head](head.js)
@@ -325,4 +325,80 @@ findKey({
   "Ora":       { stars: 2 },
   "Akelarre":  { stars: 3 }
 }, x => x.stars === 2); // => "noma"
+```
+
+## testFunctionality
+Tests the overall functionality of the liberary. If there is no error, than all tests should pass as shown below.
+
+
+```bash
+# Expected output
+Testing assertEqual
+✅  Assertion Passed: Bootcamp === Bootcamp
+✅  Assertion Passed: 1 === 1
+Testing countLetters
+✅  Assertion Passed: 2 === 2
+✅  Assertion Passed: 6 === 6
+✅  Assertion Passed: 4 === 4
+✅  Assertion Passed: 1 === 1
+✅  Assertion Passed: 7 === 7
+✅  Assertion Passed: 2 === 2
+Testing countOnly
+✅  Assertion Passed: 1 === 1
+✅  Assertion Passed: undefined === undefined
+✅  Assertion Passed: 2 === 2
+Testing eqArrays
+✅  Assertion Passed: 1,2,3 === 1,2,3
+✅  Assertion Passed: 1,2,3 === 1,2,3
+Testing eqObjects
+✅  Assertion Passed: true === true
+✅  Assertion Passed: true === true
+✅  Assertion Passed: true === true
+✅  Assertion Passed: false === false
+✅  Assertion Passed: true === true
+✅  Assertion Passed: true === true
+✅  Assertion Passed: false === false
+Testing findKey
+✅  Assertion Passed: noma === noma
+Testing findKeyByValue
+✅  Assertion Passed: drama === drama
+✅  Assertion Passed: undefined === undefined
+Testing findKeysByValue
+✅  Assertion Passed: drama,drama2 === drama,drama2
+✅  Assertion Passed:  ===
+Testing flatten
+✅  Assertion Passed: 1,2,3,4,5,6,7,8,9,10 === 1,2,3,4,5,6,7,8,9,10
+✅  Assertion Passed: 1,2,3 === 1,2,3
+Testing head
+✅  Assertion Passed: 5 === 5
+✅  Assertion Passed: Hello === Hello
+✅  Assertion Passed: undefined === undefined
+Testing letterPositions
+✅  Assertion Passed: 0,6,8,10 === 0,6,8,10
+✅  Assertion Passed: 1,7,9,11 === 1,7,9,11
+✅  Assertion Passed: 2,3 === 2,3
+✅  Assertion Passed: 4 === 4
+✅  Assertion Passed: 5 === 5
+Testing map
+✅  Assertion Passed: g,c,t,m,t === g,c,t,m,t
+Testing middle
+✅  Assertion Passed:  ===
+✅  Assertion Passed:  ===
+✅  Assertion Passed: 2 === 2
+✅  Assertion Passed: 3 === 3
+✅  Assertion Passed: 2,3 === 2,3
+✅  Assertion Passed: 3,4 === 3,4
+Testing min
+✅  Assertion Passed: -8 === -8
+Testing tail
+✅  Assertion Passed: 2 === 2
+✅  Assertion Passed: 3 === 3
+✅  Assertion Passed: 4 === 4
+Testing takeUntil
+✅  Assertion Passed: 1,2,5,7,2 === 1,2,5,7,2
+✅  Assertion Passed: I've,been,to,Hollywood === I've,been,to,Hollywood
+Testing without
+✅  Assertion Passed: 2,3 === 2,3
+✅  Assertion Passed: 2,3 === 2,3
+✅  Assertion Passed: 1,2 === 1,2
 ```
