@@ -2,15 +2,15 @@
 It's a simplified & minified version of [Lodash](https://github.com/lodash/lodash) library 
 
 # Contents
-## [assertEqual.js](assertEqual.js)
+## [assertEqual](assertEqual.js)
  A custom assert function with emoji icons.
 
-Output
+Output of `assertEqual.assertFunctionality()`
  ```bash
   🛑  Assertion Failed: "Lighthouse Labs" !== "Bootcamp"
   ✅  Assertion Passed: 1 === 1
  ```
-## [head.js](head.js)
+## [head](head.js)
  Returns the head of an array. Returns 'undefined' for empty array.
  
  ```javascript
@@ -21,7 +21,7 @@ head([]);
 // => undefined
  ```
 
- ## [tail.js](tail.js)
+ ## [tail](tail.js)
 Returns the tail of an array. ie, everything after the first element.
 
  ```javascript
@@ -29,16 +29,19 @@ tail([1, 2, 3]);
 // => [2, 3]
  
  ```
- ## [min.js](min.js)
+ ## [min](min.js)
  Returns the minimum of an array.
 
  ```javascript
   let testArray = [5, 7, -8, 2, 4, 0, 8, -1, 54, 13];
   min(testArray);
   // => -8
+
+  min.assertFunctionality();
+  // Returns: ✅  Assertion Passed: -8 === -8
  ```
 
-## [eqArrays.js](eqArrays.js)
+## [eqArrays](eqArrays.js)
 Takes in two arrays and returns true or false, based on a perfect match. It also works with nested arrays.
 
 ```javascript
@@ -49,11 +52,11 @@ eqArrays(["1", "2", "3"], ["1", "2", "3"]) // => true
 eqArrays(["1", "2", "3"], ["1", "2", 3]) // => false
 ```
 
-## [assertArraysEqual.js](assertArraysEqual.js)
+## [eqArrays.assertArraysEqual](eqArrays.js)
  Take in two arrays, asserts that the two are identical, and `console.log` an appropriate message to the console. 
 
 
-## [middle.js](middle.js)
+## [middle](middle.js)
 Takes in an array and return the middle-most element(s) of the given array.
 * For arrays with one or two elements, returns an empty array.
 * For arrays with odd number of elements, an array containing a single middle element is returned.
@@ -71,11 +74,11 @@ middle([1, 2, 3, 4]) // => [2, 3]
 middle([1, 2, 3, 4, 5, 6]) // => [3, 4]
 ```
 
-## [assertMiddle.js](assertMiddle.js)
+## [middle.assertFunctionality()](middle.js)
 Asserts the functionality of middle.js
 
 ```bash
-> node assertMiddle
+# middle.assertFunctionality()
 ✅  Assertion Passed:  ===
 ✅  Assertion Passed:  ===
 ✅  Assertion Passed: 2 === 2
@@ -84,7 +87,7 @@ Asserts the functionality of middle.js
 ✅  Assertion Passed: 3,4 === 3,4
 ```
 
-## [without.js](without.js)
+## [without](without.js)
 Will return a subset of a given array, removing unwanted elements. 
 
 ```javascript
@@ -92,17 +95,17 @@ without([1, 2, 3], [1]) // => [2, 3]
 without([1, 2, 1, 3, 1], [1]) // => [2, 3]
 without(["1", "2", "3"], [1, 2, "3"]) // => ["1", "2"]
 ```
-## [assertWithout.js](assertWithout.js)
+## [without.assertFunctionality()](without.js)
 Asserts the functionality of witout.js
 
 ```bash
-> node assertWithout
+# without.assertFunctionality()
 ✅  Assertion Passed: 2,3 === 2,3
 ✅  Assertion Passed: 2,3 === 2,3
 ✅  Assertion Passed: 1,2 === 1,2
 ```
 
-## [flatten.js](flatten.js)
+## [flatten](flatten.js)
 Given an array with other arrays inside, this function can flatten it into a single-level array.
 
 ```javascript
@@ -114,8 +117,8 @@ flatten([1, 2, [3, [[[[4]] , 5]]], 6, [7, 8, 9, 10]])
 flatten(["1", ["2", ["3"]]]) // => [ '1', '2', '3' ]
 ```
 
-## [assertFlatten.js](assertFlatten.js)
-Asserts the functionality of witout.js
+## [flatten.assertFunctionality()](flatten.js)
+Asserts the functionality of flatten.js
 
 Output
 ```bash
@@ -123,7 +126,7 @@ Output
 ✅  Assertion Passed: 1,2,3 === 1,2,3
 ```
 
-## [countOnly.js](countOnly.js)
+## [countOnly](countOnly.js)
 Takes in a collection of items and return an object containing counts of everything that the input object listed.
 
 ![Lotide countOnly](images/countOnly.png)
@@ -148,7 +151,7 @@ console.log(result1);
 ```
 
 
-## [assertCountOnly.js](assertCountOnly.js)
+## [countOnly.assertFunctionality()](countOnly.js)
 Asserts the functionality of countOnly.js
 
 ```bash
@@ -158,11 +161,11 @@ Asserts the functionality of countOnly.js
 ✅  Assertion Passed: 2 === 2
 ```
 
-## [countLetters.js](countLetters.js)
+## [countLetters](countLetters.js)
 Returns an object containing count of every letter in an input string
 
 
-## [assertCountLetters.js](assertCountLetters.js)
+## [countLetters.assertFunctionality()](countLetters.js)
 Asserts the functionality of countLetters.js
 
 ```bash
@@ -176,7 +179,7 @@ Asserts the functionality of countLetters.js
 ```
 
 
-## [letterPositions.js](letterPositions.js)
+## [letterPositions](letterPositions.js)
 Returns an object, containing all the indices in the string where each character is found. Indicies are zero-based.
 
 ```js
@@ -192,12 +195,12 @@ letterPositions("hello hehehe");
 */
 ```
 
-## [assertLetterPositions.js](assertLetterPositions.js)
+## [letterPositions.assertFunctionality()](letterPositions.js)
 Asserts the functionality of letterPositions.js
 
 
 ```bash
-> node assertLetterPositions
+# letterPositions.assertFunctionality()
 ✅  Assertion Passed: 0,6,8,10 === 0,6,8,10
 ✅  Assertion Passed: 1,7,9,11 === 1,7,9,11
 ✅  Assertion Passed: 2,3 === 2,3
@@ -205,7 +208,7 @@ Asserts the functionality of letterPositions.js
 ✅  Assertion Passed: 5 === 5
 ```
 
-## [findKeyByValue.js](findKeyByValue.js)
+## [findKeyByValue](findKeyByValue.js)
 Searches for a key in an object where its value matches a given value.
 
 ```js
@@ -223,11 +226,11 @@ findKeyByValue(bestTVShowsByGenre, "That '70s Show");
 // Returns:  undefined
 ```
 
-## [assertFindKeyByValue.js](assertFindKeyByValue.js)
+## [findKeyByValue.assertFunctionality()](findKeyByValue.js)
 Asserts the functionality of findKeyByValue.js
 
 
-## [findKeysByValue.js](findKeyByValue.js)
+## [findKeysByValue](findKeysByValue.js)
 Searches for keys in an object where its value matches a given value. Returns an array.
 
 
@@ -246,10 +249,10 @@ findKeyByValue(bestTVShowsByGenre, "That '70s Show");
 // Returns:  []
 ```
 
-## [assertFindKeysByValue.js](assertFindKeyByValue.js)
-Asserts the functionality of findKeyByValues.js
+## [findKeysByValue.assertFunctionality()](findKeysByValue.js)
+Asserts the functionality of findKeysByValue.js
 
-## [eqObjects.js](eqObjects.js)
+## [eqObjects](eqObjects.js)
 Take in two objects, checks whether that the two are identical, and returns a boolean.
 Supports nested objects with premitive values, and nested arrays.
 
@@ -260,7 +263,7 @@ eqObjects({ x: 1, y:{y: [[2, [2]]], z: {m:'w'}}}, { x: 1, y:{y: [[2, [2]]], z: {
 eqObjects({ x: 1, y: 2, z: 'w' }, { x: 1, y: 2, z: 'w', zz:'zz' }); // => false
 ```
 
-## [assertEqObjects.js](assertEqObjects.js)
+## [eqObjects.assertFunctionality()](eqObjects.js)
 Asserts functionality of eqObjects.js
 
 Should return:
@@ -274,7 +277,7 @@ Should return:
 ✅  Assertion Passed: false === false
 ```
 
-## [map.js](map.js)
+## [map](map.js)
 Returns a new array based on the results of callback function.
 
 Requires:
@@ -290,7 +293,7 @@ assertArraysEqual(firstLetters, ['g','c','t','m','t']);
 ```
 
 
-## [takeUntil.js](takeUntil.js)
+## [takeUntil](takeUntil.js)
 Creates a slice of array with elements taken from the beginning. Elements are taken until predicate returns falsey. The predicate is invoked with three arguments: (value, index, array).
 ```js
 const data1 = [1, 2, 5, 7, 2, -1, 2, 4, 5];
@@ -310,7 +313,7 @@ assertArraysEqual(results2, [ "I've", 'been', 'to', 'Hollywood' ]);
 
 ```
 
-## [findKey.js](findKey.js)
+## [findKey](findKey.js)
 This method returns the key of the first element predicate returns truthy. Predicate takes (object[key], key, object).
 
 ```js
