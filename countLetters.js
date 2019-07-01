@@ -1,6 +1,5 @@
 // returns an object containing counts of every letter in an input string
 // jshint esversion : 6
-const assertEqual = require('./assertEqual');
 
 const countLetters = function(str) {
   let out = {};
@@ -14,19 +13,6 @@ const countLetters = function(str) {
   });
 
   return out;
-};
-
-
-countLetters.assertFunctionality = function() {
-  // Should pass all cases
-  console.log("Testing " + this.name);
-  const result1 = countLetters("Hi there.... Hehehehe...");
-  assertEqual(result1.H, 2);
-  assertEqual(result1.e, 6);
-  assertEqual(result1.h, 4);
-  assertEqual(result1.r, 1);
-  assertEqual(result1['.'], 7);
-  assertEqual(result1[' '], 2);
 };
 
 
