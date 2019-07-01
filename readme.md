@@ -5,9 +5,9 @@ It's a simplified & minified version of [Lodash](https://github.com/lodash/lodas
 ## [assertEqual](assertEqual.js)
  A custom assert function with emoji icons.
 
-Output of `assertEqual.assertFunctionality()`
+Output of  `assertEqual('Bootcamp' === 'Bootcamp')` and `assertEqual(1 === 1)`
  ```bash
-  ✅  Assertion Passed: Bootcamp === Bootcam
+  ✅  Assertion Passed: Bootcamp === Bootcamp
   ✅  Assertion Passed: 1 === 1
  ```
 ## [head](head.js)
@@ -37,7 +37,7 @@ tail([1, 2, 3]);
   min(testArray);
   // => -8
 
-  min.assertFunctionality();
+  minTest();
   // Returns: ✅  Assertion Passed: -8 === -8
  ```
 
@@ -52,7 +52,7 @@ eqArrays(["1", "2", "3"], ["1", "2", "3"]) // => true
 eqArrays(["1", "2", "3"], ["1", "2", 3]) // => false
 ```
 
-## [eqArrays.assertArraysEqual](eqArrays.js)
+## [eqArraysTest](/test/eqArraysTest.js)
  Take in two arrays, asserts that the two are identical, and `console.log` an appropriate message to the console. 
 
 
@@ -74,11 +74,11 @@ middle([1, 2, 3, 4]) // => [2, 3]
 middle([1, 2, 3, 4, 5, 6]) // => [3, 4]
 ```
 
-## [middle.assertFunctionality()](middle.js)
+## [middleTest()](/test/middleTest.js)
 Asserts the functionality of middle.js
 
 ```bash
-# middle.assertFunctionality()
+# middleTest()
 ✅  Assertion Passed:  ===
 ✅  Assertion Passed:  ===
 ✅  Assertion Passed: 2 === 2
@@ -95,11 +95,11 @@ without([1, 2, 3], [1]) // => [2, 3]
 without([1, 2, 1, 3, 1], [1]) // => [2, 3]
 without(["1", "2", "3"], [1, 2, "3"]) // => ["1", "2"]
 ```
-## [without.assertFunctionality()](without.js)
+## [withoutTest()](/test/withoutTest.js)
 Asserts the functionality of witout.js
 
 ```bash
-# without.assertFunctionality()
+# withoutTest()
 ✅  Assertion Passed: 2,3 === 2,3
 ✅  Assertion Passed: 2,3 === 2,3
 ✅  Assertion Passed: 1,2 === 1,2
@@ -117,7 +117,7 @@ flatten([1, 2, [3, [[[[4]] , 5]]], 6, [7, 8, 9, 10]])
 flatten(["1", ["2", ["3"]]]) // => [ '1', '2', '3' ]
 ```
 
-## [flatten.assertFunctionality()](flatten.js)
+## [flattenTest()](/test/flattenTest.js)
 Asserts the functionality of flatten.js
 
 Output
@@ -151,11 +151,11 @@ console.log(result1);
 ```
 
 
-## [countOnly.assertFunctionality()](countOnly.js)
+## [countOnlyTest()](/test/countOnlyTest.js)
 Asserts the functionality of countOnly.js
 
 ```bash
-> node assertCountOnly
+> node assertCountOnlyTest
 ✅  Assertion Passed: 1 === 1
 ✅  Assertion Passed: undefined === undefined
 ✅  Assertion Passed: 2 === 2
@@ -165,11 +165,11 @@ Asserts the functionality of countOnly.js
 Returns an object containing count of every letter in an input string
 
 
-## [countLetters.assertFunctionality()](countLetters.js)
-Asserts the functionality of countLetters.js
+## [countLettersTest()](/test/countLettersTest.js)
+Asserts the functionality of `countLetters.js`
 
 ```bash
-> node assertCountLetters
+> node assertCountLettersTest
 ✅  Assertion Passed: 2 === 2
 ✅  Assertion Passed: 6 === 6
 ✅  Assertion Passed: 4 === 4
@@ -195,12 +195,12 @@ letterPositions("hello hehehe");
 */
 ```
 
-## [letterPositions.assertFunctionality()](letterPositions.js)
+## [letterPositionsTest()](/test/letterPositionsTest.js)
 Asserts the functionality of letterPositions.js
 
 
 ```bash
-# letterPositions.assertFunctionality()
+# letterPositionsTest()
 ✅  Assertion Passed: 0,6,8,10 === 0,6,8,10
 ✅  Assertion Passed: 1,7,9,11 === 1,7,9,11
 ✅  Assertion Passed: 2,3 === 2,3
@@ -226,7 +226,7 @@ findKeyByValue(bestTVShowsByGenre, "That '70s Show");
 // Returns:  undefined
 ```
 
-## [findKeyByValue.assertFunctionality()](findKeyByValue.js)
+## [findKeyByValueTest()](/test/findKeyByValueTest.js)
 Asserts the functionality of findKeyByValue.js
 
 
@@ -249,7 +249,7 @@ findKeyByValue(bestTVShowsByGenre, "That '70s Show");
 // Returns:  []
 ```
 
-## [findKeysByValue.assertFunctionality()](findKeysByValue.js)
+## [findKeysByValueTest()](/test/findKeysByValueTest.js)
 Asserts the functionality of findKeysByValue.js
 
 ## [eqObjects](eqObjects.js)
@@ -263,8 +263,8 @@ eqObjects({ x: 1, y:{y: [[2, [2]]], z: {m:'w'}}}, { x: 1, y:{y: [[2, [2]]], z: {
 eqObjects({ x: 1, y: 2, z: 'w' }, { x: 1, y: 2, z: 'w', zz:'zz' }); // => false
 ```
 
-## [eqObjects.assertFunctionality()](eqObjects.js)
-Asserts functionality of eqObjects.js
+## [eqObjectsTest()](/test/eqObjectsTest.js)
+Asserts functionality of `eqObjects.js`
 
 Should return:
 ```bash
@@ -288,7 +288,7 @@ const words = ["ground", "control", "to", "major", "tom"];
 let firstLetters = map(words, word => word[0]);
 // Returns: ['g','c','t','m','t']
 
-assertArraysEqual(firstLetters, ['g','c','t','m','t']);
+eqArraysLogger(firstLetters, ['g','c','t','m','t']);
 // Returns: ✅  Assertion Passed: g,c,t,m,t === g,c,t,m,t
 ```
 
@@ -305,8 +305,8 @@ const results2 = takeUntil(data2, x => x === ',');
 // results2 = ["I've", "been", "to", "Hollywood"]
 
 
-assertArraysEqual(results1, [ 1, 2, 5, 7, 2 ]);
-assertArraysEqual(results2, [ "I've", 'been', 'to', 'Hollywood' ]);
+eqArraysLogger(results1, [ 1, 2, 5, 7, 2 ]);
+eqArraysLogger(results2, [ "I've", 'been', 'to', 'Hollywood' ]);
 // Returns:
 // ✅  Assertion Passed: 1,2,5,7,2 === 1,2,5,7,2
 // ✅  Assertion Passed: I've,been,to,Hollywood === I've,been,to,Hollywood
@@ -328,77 +328,4 @@ findKey({
 ```
 
 ## testFunctionality
-Tests the overall functionality of the liberary. If there is no error, than all tests should pass as shown below.
-
-
-```bash
-# Expected output
-Testing assertEqual
-✅  Assertion Passed: Bootcamp === Bootcamp
-✅  Assertion Passed: 1 === 1
-Testing countLetters
-✅  Assertion Passed: 2 === 2
-✅  Assertion Passed: 6 === 6
-✅  Assertion Passed: 4 === 4
-✅  Assertion Passed: 1 === 1
-✅  Assertion Passed: 7 === 7
-✅  Assertion Passed: 2 === 2
-Testing countOnly
-✅  Assertion Passed: 1 === 1
-✅  Assertion Passed: undefined === undefined
-✅  Assertion Passed: 2 === 2
-Testing eqArrays
-✅  Assertion Passed: 1,2,3 === 1,2,3
-✅  Assertion Passed: 1,2,3 === 1,2,3
-Testing eqObjects
-✅  Assertion Passed: true === true
-✅  Assertion Passed: true === true
-✅  Assertion Passed: true === true
-✅  Assertion Passed: false === false
-✅  Assertion Passed: true === true
-✅  Assertion Passed: true === true
-✅  Assertion Passed: false === false
-Testing findKey
-✅  Assertion Passed: noma === noma
-Testing findKeyByValue
-✅  Assertion Passed: drama === drama
-✅  Assertion Passed: undefined === undefined
-Testing findKeysByValue
-✅  Assertion Passed: drama,drama2 === drama,drama2
-✅  Assertion Passed:  ===
-Testing flatten
-✅  Assertion Passed: 1,2,3,4,5,6,7,8,9,10 === 1,2,3,4,5,6,7,8,9,10
-✅  Assertion Passed: 1,2,3 === 1,2,3
-Testing head
-✅  Assertion Passed: 5 === 5
-✅  Assertion Passed: Hello === Hello
-✅  Assertion Passed: undefined === undefined
-Testing letterPositions
-✅  Assertion Passed: 0,6,8,10 === 0,6,8,10
-✅  Assertion Passed: 1,7,9,11 === 1,7,9,11
-✅  Assertion Passed: 2,3 === 2,3
-✅  Assertion Passed: 4 === 4
-✅  Assertion Passed: 5 === 5
-Testing map
-✅  Assertion Passed: g,c,t,m,t === g,c,t,m,t
-Testing middle
-✅  Assertion Passed:  ===
-✅  Assertion Passed:  ===
-✅  Assertion Passed: 2 === 2
-✅  Assertion Passed: 3 === 3
-✅  Assertion Passed: 2,3 === 2,3
-✅  Assertion Passed: 3,4 === 3,4
-Testing min
-✅  Assertion Passed: -8 === -8
-Testing tail
-✅  Assertion Passed: 2 === 2
-✅  Assertion Passed: 3 === 3
-✅  Assertion Passed: 4 === 4
-Testing takeUntil
-✅  Assertion Passed: 1,2,5,7,2 === 1,2,5,7,2
-✅  Assertion Passed: I've,been,to,Hollywood === I've,been,to,Hollywood
-Testing without
-✅  Assertion Passed: 2,3 === 2,3
-✅  Assertion Passed: 2,3 === 2,3
-✅  Assertion Passed: 1,2 === 1,2
-```
+depricated
