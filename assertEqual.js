@@ -12,9 +12,5 @@ const assertEqual = function(actual, expected) {
   }
 };
 
-assertEqual.assertFunctionality = function() {
-  console.log("Testing " + this.name);
-  assertEqual("Bootcamp", "Bootcamp");
-  assertEqual(1, 1);
-};
+
 module.exports = assertEqual;
