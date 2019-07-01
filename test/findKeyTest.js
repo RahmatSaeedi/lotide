@@ -1,7 +1,7 @@
 
 // jshint esversion : 6
-const assertEqual = require('./assertEqual');
-const findKey = require('./findKey');
+const assertEqual = require('../assertEqual');
+const findKey = require('../findKey');
 
 let ans = findKey({
   "Blue Hill": { stars: 1 },
