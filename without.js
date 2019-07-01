@@ -1,6 +1,5 @@
 // Will return a subset of a given array, removing unwanted elements.
 // jshint esversion : 6
-const assertArraysEqual = require('./eqArrays').assertArraysEqual;
 
 const without = function(sourceArray, itemsToRemoveArray) {
   let newArray = [];
@@ -13,15 +12,6 @@ const without = function(sourceArray, itemsToRemoveArray) {
     }
   }
   return newArray;
-};
-
-
-without.assertFunctionality = function() {
-  console.log("Testing " + this.name);
-  
-  assertArraysEqual(without([1, 2, 3], [1]), [2, 3]);
-  assertArraysEqual(without([1, 2, 1, 3, 1], [1]), [2, 3]);
-  assertArraysEqual(without(["1", "2", "3"], [1, 2, "3"]), ["1", "2"]);
 };
 
 
