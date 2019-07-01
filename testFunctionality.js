@@ -1,5 +1,3 @@
-require('./head').assertFunctionality();
-require('./letterPositions').assertFunctionality();
 require('./map').assertFunctionality();
 require('./middle').assertFunctionality();
 require('./min').assertFunctionality();
