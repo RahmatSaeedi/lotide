@@ -1,6 +1,6 @@
 // jshint esversion : 6
-const assertEqual = require('./assertEqual');
-const tail = require('./tail');
+const assertEqual = require('../assertEqual');
+const tail = require('../tail');
 
 
 let x = [1, 2, 3, 4];
