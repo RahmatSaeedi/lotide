@@ -1,6 +1,3 @@
-
-require('./findKeyByValue').assertFunctionality();
-require('./findKeysByValue').assertFunctionality();
 require('./flatten').assertFunctionality();
 require('./head').assertFunctionality();
 require('./letterPositions').assertFunctionality();
