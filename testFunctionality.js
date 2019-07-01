@@ -1,5 +1,4 @@
 
-require('./findKey').assertFunctionality();
 require('./findKeyByValue').assertFunctionality();
 require('./findKeysByValue').assertFunctionality();
 require('./flatten').assertFunctionality();
