@@ -1,6 +1,6 @@
 // jshint esversion : 6
-const flatten = require('./flatten');
-const eqArrays = require('./eqArrays');
+const flatten = require('../flatten');
+const eqArrays = require('../eqArrays');
 
 
 const assertArraysEqual = function(array1, array2) {
