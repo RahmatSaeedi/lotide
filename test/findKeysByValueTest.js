@@ -1,5 +1,5 @@
 // jshint esversion : 6
-const findKeysByValue = require('./findKeysByValue');
+const findKeysByValue = require('../findKeysByValue');
 const eqArrays = require('../eqArrays');
 
 
