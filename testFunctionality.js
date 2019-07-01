@@ -1,5 +1,4 @@
 
-require('./countLetters').assertFunctionality();
 require('./countOnly').assertFunctionality();
 require('./eqArrays').assertFunctionality();
 require('./eqObjects').assertFunctionality();
