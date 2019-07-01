@@ -1,6 +1,5 @@
 // Given an array with other arrays inside, this function can flatten it into a single-level array.
 // jshint esversion : 6
-const assertArraysEqual = require('./eqArrays').assertArraysEqual;
 
 const flatten = function(sourceArray) {
   let newArray = [];
@@ -15,11 +14,5 @@ const flatten = function(sourceArray) {
   return newArray;
 };
 
-
-flatten.assertFunctionality = function() {
-  console.log("Testing " + this.name);
-  assertArraysEqual(flatten([1, 2, [3, [[[[4]] , 5]]], 6, [7, 8, 9, 10]]), [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]);
-  assertArraysEqual(flatten(["1", ["2", ["3"]]]), ["1", "2", "3"]);
-};
 
 module.exports = flatten;

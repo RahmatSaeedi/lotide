@@ -1,4 +1,3 @@
-require('./flatten').assertFunctionality();
 require('./head').assertFunctionality();
 require('./letterPositions').assertFunctionality();
 require('./map').assertFunctionality();
