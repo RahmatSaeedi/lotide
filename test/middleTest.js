@@ -1,6 +1,6 @@
 // jshint esversion : 6
-const middle = require('./middle');
-const eqArrays = require('./eqArrays');
+const middle = require('../middle');
+const eqArrays = require('../eqArrays');
 
 const assertArraysEqual = function(array1, array2) {
   if (eqArrays(array1, array2)) {
