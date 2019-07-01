@@ -1,5 +1,4 @@
 
-require('./eqArrays').assertFunctionality();
 require('./eqObjects').assertFunctionality();
 require('./findKey').assertFunctionality();
 require('./findKeyByValue').assertFunctionality();

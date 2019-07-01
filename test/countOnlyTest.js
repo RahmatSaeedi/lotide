@@ -1,3 +1,4 @@
+// jshint esversion : 6
 // Should pass all cases
 const assertEqual = require('../assertEqual');
 const countOnly = require('../countOnly');

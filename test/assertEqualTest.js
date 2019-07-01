@@ -1,3 +1,4 @@
+// jshint esversion : 6
 const assertEqual = require('../assertEqual');
 
 console.log("Testing assertEqual");
