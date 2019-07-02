@@ -127,7 +127,7 @@ Supports nested objects with premitive values, and nested arrays.
   head([]);
   // => undefined
   ```
-* [`letterPositions(string)`](`letterPositions.js`): Returns an object, containing all the indices in the string where each character is found. Indicies are zero-based.
+* [`letterPositions(string)`](letterPositions.js): Returns an object, containing all the indices in the string where each character is found. Indicies are zero-based.
   ```js
   letterPositions("Hello hehehe");
   /* Returns
@@ -195,4 +195,94 @@ Requires:
   without(["1", "2", "3"], [1, 2, "3"]) // => ["1", "2"]
   ```
 
+## Devlopment Testing
+Testing requires installing *Mocha* & *Chai*. If everything is alright, then ```npm test``` should return the following:
 
+```bash
+  #assertEqual
+    √ returns 'true' for 1===1
+    √ returns 'true' for 'bootcamp' === 'bootcamp'
+    √ returns 'false' for '7' === 7
+
+  #countLetters
+    √ return['g'] is 2 for input 'google...'
+    √ return['.'] is 3 for input 'google...'
+
+  #countOnly
+    √ return correct value
+    √ is case sensitive
+    √ returns 'undefined' for non-existant keys
+
+  #eqArrays
+    √ returns 'true' for same arrays
+    √ returns 'false' for different arrays
+    √ returns 'true' for same nested-arrays
+    √ returns 'true' for same mixed number-string nested-arrays
+
+  #eqObjects
+    √ returns 'true' for the same flat-objects with perimitive-values
+    √ returns 'false' for unlike simple flat-objects
+    √ returns 'true' for the same nested-obeject with nested-array values
+    √ returns 'true' for the same nested-obeject with nested-array values
+
+  #findKeyByValue
+    √ returns the correct key for string-valued values
+    √ returns the correct key for integer-valued values
+    √ returns 'undefined' if value is not in the object
+
+  #findKeysByValue
+    √ returns the correct keys for string-valued values
+    √ returns the correct keys for integer-valued values
+    √ returns '[]' if values is not in the object
+
+  #findKey
+    √ returns the correct key
+    √ returns 'undefined' if none-matches
+
+  #flatten
+    √ returns the correct array for integer-valued values
+    √ returns the correct keys for string-valued values
+
+  #head
+    √ returns 1 for [1, 2, 3]
+    √ returns 'Hello' for ['Hello', 'Lighthouse', 'Labs']
+    √ returns 'undefined' for []
+
+  #letterPositions
+    √ returns the correct position-arrays as an object
+    √ is case sensitive
+    √ returns 'undefined' for characters that don't exist in the string
+    √ works with special character: white-space
+    √ works with special characters: ~!@#$%^&*()_+|\=-`{}[]":;'<>?/.,
+  #map
+    √ returns correct output
+
+  #middle
+    √ returns empty-array if input-array has 1 element
+    √ returns empty-array if input-array has 2 elements
+    √ returns correct array for arrays with odd number of elements
+    √ returns correct array for arrays with even number of elements
+
+  #min
+    √ returns correct output for all positive valued array
+    √ returns correct output for all negative valued array
+    √ returns correct output for mixed valued array
+
+  #tail
+    √ returns the correct output for nonempty input-arrays
+    √ returns an empty array for empty input-array
+    √ returns an empty array for an array with single element in it
+
+  #takeUntil
+    √ returns the correct output for integer-valued input-arrays
+    √ returns the correct output for string-valued input-arrays
+    √ returns an empty array for an empty input-array and 'undefined' callback function
+
+  #without
+    √ returns the correct output for flat premitive-valued input-arrays
+    √ returns the correct output for nested-premitive-valued input-arrays
+    √ returns an empty array for an empty input-array
+
+
+  51 passing (49ms)
+```

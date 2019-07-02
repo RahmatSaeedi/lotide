@@ -2,7 +2,7 @@
   "name": "lotide",
   "version": "1.0.0",
   "description": "A light-weight, simplified, & minified version of Lodash library",
-  "main": "readme.md",
+  "main": "lotide.js",
   "directories": {
     "test": "test"
   },
@@ -20,7 +20,10 @@
   },
   "keywords": [
     "Lotide",
-    "Lodash"
+    "Lodash",
+    "Lighthouse Labs",
+    "Bootcamp",
+    "Web development bootcamp"
   ],
   "author": "Rahmat Saeedi",
   "license": "ISC",
