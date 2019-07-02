@@ -1,5 +1,5 @@
 {
-  "name": "lotide",
+  "name": "@rahmatsaeedi/lotide",
   "version": "1.0.0",
   "description": "A light-weight, simplified, & minified version of Lodash library",
   "main": "lotide.js",
