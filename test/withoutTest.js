@@ -5,7 +5,7 @@ const expect = require('chai').expect;
 
 describe('#without', () => {
 
-  const results1 = without([1, "2", 3], [1]); 
+  const results1 = without([1, "2", 3], [1]);
   const expectedResult1 = ["2", 3];
 
   const results2 = without([1, ["2", [1], 3], 1, 5], [1, "2"]);
