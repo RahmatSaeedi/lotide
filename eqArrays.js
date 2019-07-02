@@ -1,5 +1,6 @@
 // Takes in two arrays and returns true or false, based on a perfect match.
 // jshint esversion : 6
+const assertEqual = require('./assertEqual');
 
 const eqArrays = function(array1, array2) {
   if (!(array1 instanceof Array) || !(array2 instanceof Array) || (array1.length !== array2.length)) {

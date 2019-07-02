@@ -6,7 +6,7 @@ const without = function(sourceArray, itemsToRemoveArray) {
 
   for (let i = 0; i < sourceArray.length; i++) {
     if (sourceArray[i] instanceof Object) {
-      newArray.push(without(sourceArray, itemsToRemoveArray));
+      newArray.push(without(sourceArray[i], itemsToRemoveArray));
     } else if (!itemsToRemoveArray.includes(sourceArray[i])) {
       newArray.push(sourceArray[i]);
     }

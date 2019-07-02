@@ -1,4 +1,4 @@
-// returns an object containing counts of everything that the input object listed
+// returns an object containing counts of everything that the input object listed.
 // jshint esversion : 6
 
 const countOnly = function(array, itemsToCount) {

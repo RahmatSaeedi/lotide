@@ -1,13 +1,15 @@
 // jshint esversion : 6
-const assertEqual = require('../assertEqual');
+const assert = require('chai').assert;
 const countLetters = require('../countLetters');
 
+describe("#countLetters", () => {
+  const result = countLetters('google...');
+  it("return['g'] is 2 for input 'google...'", () => {
+    assert.strictEqual(result.g, 2);
+  });
 
+  it("return['.'] is 3 for input 'google...'", () => {
+    assert.strictEqual(result['.'], 3);
+  });
 
-const result1 = countLetters("Hi there.... Hehehehe...");
-assertEqual(result1.H, 2);
-assertEqual(result1.e, 6);
-assertEqual(result1.h, 4);
-assertEqual(result1.r, 1);
-assertEqual(result1['.'], 7);
-assertEqual(result1[' '], 2);
+});

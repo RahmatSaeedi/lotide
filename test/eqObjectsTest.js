@@ -1,14 +1,19 @@
 // jshint esversion : 6
-const assertEqual = require('../assertEqual');
+const assert = require('chai').assert;
 const eqObjects = require('../eqObjects');
 
-assertEqual(eqObjects({ x: 1, y: 2, z: 'w' }, { x: 1, y: 2, z: 'w' }), true);
-assertEqual(eqObjects({ y: 2, x: 1, z: 'w' }, { x: 1, y: 2, z: 'w' }), true);
-assertEqual(eqObjects({ x: 1, y:{y: 2, z: {m:'w'}}}, { x: 1, y:{y: 2, z: {m:'w'}} }), true);
-assertEqual(eqObjects({ x: 1, y: 2, z: 'w' }, { x: 1, y: 2, z: 'w', zz:'zz' }), false);
-assertEqual(eqObjects({ x: 1, y: ["2", [3]], z: 'w' }, { x: 1, y: ["2", [3]], z: 'w' }), true);
-const cd = { c: "1", d: ["2", 3] };
-const dc = { d: ["2", 3], c: "1" };
-const cd2 = { c: "1", d: ["2", 3, 4] };
-assertEqual(eqObjects(cd, dc), true);
-assertEqual(eqObjects(cd, cd2), false);
+describe('#eqObjects', () => {
+  it("returns 'true' for the same flat-objects with perimitive-values",() => {
+    assert.strictEqual(eqObjects({ x: 1, y: 2, z: 'w' },{ x: 1, y: 2, z: 'w' }), true);
+  });
+  it("returns 'false' for unlike simple flat-objects",() => {
+    assert.strictEqual(eqObjects({ x: 5, y: 2, z: 'w' },{ x: 1, y: 2, z: 'w' }), false);
+  });
+  it("returns 'true' for the same nested-obeject with nested-array values",() => {
+    assert.strictEqual(eqObjects({ x: 1, y: {y: 9}, z: 'w' },{ x: 1, y: {y: 9}, z: 'w' }), true);
+  });
+  it("returns 'true' for the same nested-obeject with nested-array values",() => {
+    assert.strictEqual(eqObjects({ x: 1, y: {y: ["2", [3, 7]]}, z: 'w' },{ x: 1, y: {y: ["2", [3, 7]]}, z: 'w' }), true);
+  });
+});
+

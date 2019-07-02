@@ -1,4 +1,5 @@
 // Searches for a key in an object where its value matches a given value.
+// Does not work with object- or array-valued values
 // jshint esversion : 6
 
 

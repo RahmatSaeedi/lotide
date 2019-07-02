@@ -2,12 +2,16 @@
 // jshint esversion: 6
 
 
-const assertEqual = function(actual, expected) {
+const assertEqual = function(actual, expected, suppressLogging = false) {
   if (actual === expected) {
-    console.log(`✅  Assertion Passed: ${actual} === ${expected}`);
+    if (!suppressLogging) {
+      console.log(`✅  Assertion Passed: ${actual} === ${expected}`);
+    }
     return true;
   } else {
-    console.log(`🛑  Assertion Failed: ${actual} !== ${expected}`);
+    if (!suppressLogging) {
+      console.log(`🛑  Assertion Failed: ${actual} !== ${expected}`);
+    }
     return false;
   }
 };
